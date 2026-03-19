@@ -57,8 +57,8 @@
       top: 0;
       left: 0;
       right: 0;
-      z-index: 100;
-      background: rgba(0,0,0,0.92);
+      z-index: 1000;
+      background: rgba(0,0,0,0.85);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-dark);
@@ -74,7 +74,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 32px;
-      height: 60px;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -174,7 +174,7 @@
       display: none;
       position: fixed;
       inset: 0;
-      z-index: 99;
+      z-index: 1001;
       background: #000;
       flex-direction: column;
       align-items: center;
@@ -344,7 +344,7 @@
     /* ─── FEATURES ─── */
     #features {
       background: #fff;
-      padding: 100px 32px;
+      padding: 120px 32px;
     }
 
     .features-inner {
@@ -426,7 +426,7 @@
     /* ─── HOW IT WORKS ─── */
     #how-it-works {
       background: #000;
-      padding: 100px 32px;
+      padding: 120px 32px;
     }
 
     .how-inner {
@@ -492,11 +492,12 @@
     .step-number {
       font-family: 'Geist Mono', monospace;
       font-weight: 300;
-      font-size: 10px;
-      letter-spacing: 0.15em;
-      color: #333;
-      margin-bottom: 12px;
+      font-size: 48px;
+      color: #fff;
+      opacity: 0.15;
+      margin-bottom: 8px;
       display: block;
+      line-height: 1;
     }
 
     .step-title {
@@ -824,11 +825,11 @@
       }
 
       #features {
-        padding: 72px 20px;
+        padding: 80px 20px;
       }
 
       #how-it-works {
-        padding: 72px 20px;
+        padding: 80px 20px;
       }
 
       #final-cta {
@@ -936,17 +937,17 @@
           <div class="feature-card fade-up">
             <span class="feature-icon">📊</span>
             <h3 class="feature-title">Auto GPA Calculator</h3>
-            <p class="feature-desc">Enter your scores. Weighted GPA calculates automatically — HW 20%, Midterm 30%, Final 35%, Project 15%. Letter grade, GPA points, and Dean's List detection included. You never touch a formula.</p>
+            <p class="feature-desc">Enter your scores. Weighted GPA calculates automatically — HW 20%, Midterm 30%, Final 35%, Project 15%. Letter grade, GPA points on 4.0 scale, and Dean's List detection. You never touch a formula.</p>
           </div>
           <div class="feature-card fade-up">
             <span class="feature-icon">📝</span>
             <h3 class="feature-title">Overdue Alerts</h3>
-            <p class="feature-desc">Every assignment tracked with priority flags 🔴🟡🟢 and a live countdown. The overdue flag activates automatically the moment a deadline passes — without you doing anything.</p>
+            <p class="feature-desc">Every assignment tracked with priority flags 🔴🟡🟢 and a live days-until-due countdown. The overdue flag activates automatically the moment a deadline passes — without you doing anything.</p>
           </div>
           <div class="feature-card fade-up">
             <span class="feature-icon">⏰</span>
             <h3 class="feature-title">Exam Countdown</h3>
-            <p class="feature-desc">Add your exams once. Days remaining count down live every day. Urgency auto-classifies: 📅 Upcoming → 🔥 This Week → 🚨 Tomorrow → ✅ Done. No manual updates ever.</p>
+            <p class="feature-desc">Add your exams once. Days remaining count down live every day. Urgency auto-classifies itself: 📅 Upcoming → 🔥 This Week → 🚨 Tomorrow → ✅ Done. No manual updates ever.</p>
           </div>
           <div class="feature-card fade-up">
             <span class="feature-icon">💰</span>
@@ -966,28 +967,28 @@
 
         <div class="steps-grid fade-up">
           <div class="step">
-            <span class="step-number">STEP 01</span>
+            <span class="step-number">01</span>
             <span class="step-symbol">→</span>
             <h3 class="step-title">Click the button</h3>
-            <p class="step-desc">Hit Get Free Template below. The LUMIO Scholar workspace opens in your browser instantly. No account needed to preview.</p>
+            <p class="step-desc">Hit Get Free Template below. The LUMIO Scholar workspace opens instantly in your browser. No account needed to preview.</p>
           </div>
           <div class="step">
-            <span class="step-number">STEP 02</span>
+            <span class="step-number">02</span>
             <span class="step-symbol">⧉</span>
             <h3 class="step-title">Click Duplicate</h3>
-            <p class="step-desc">You'll see a blue Duplicate button in the top right. Click it. Sign into your free Notion account. The entire system copies to your workspace in seconds.</p>
+            <p class="step-desc">You'll see a blue Duplicate button in the top right corner. Click it. Sign into your free Notion account. The entire workspace copies in seconds.</p>
           </div>
           <div class="step">
-            <span class="step-number">STEP 03</span>
+            <span class="step-number">03</span>
             <span class="step-symbol">⚙</span>
             <h3 class="step-title">Fill in Settings</h3>
-            <p class="step-desc">Open the Settings page inside the template. Add your name, university, semester start date, end date, and target GPA. Takes 2 minutes.</p>
+            <p class="step-desc">Open the Settings page. Add your name, university, semester start and end dates, and target GPA. Takes 2 minutes.</p>
           </div>
           <div class="step">
-            <span class="step-number">STEP 04</span>
+            <span class="step-number">04</span>
             <span class="step-symbol">📚</span>
             <h3 class="step-title">Add your subjects</h3>
-            <p class="step-desc">Open Subjects and add your courses. This is the hub everything connects to. Then just start using it — assignments, grades, and exams all link automatically.</p>
+            <p class="step-desc">Open Subjects and add your courses. Everything else — assignments, grades, exams — connects here automatically.</p>
           </div>
         </div>
 
