@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUMIO Scholar — Free Notion Student Planner</title>
-  <meta name="description" content="Free Notion template for students. Auto GPA calculator, assignment tracker, exam countdown, and student budget planner. All connected. All automatic.">
-  <meta property="og:title" content="LUMIO Scholar — Free Notion Student Planner">
-  <meta property="og:description" content="Free Notion template for students. Everything calculates automatically. Duplicate in one click.">
+  <title>LUMIO — Clarity through systems</title>
+  <meta name="description" content="Premium Notion templates for every area of life. Free to duplicate. Built for students, freelancers, and anyone who wants a clearer life.">
+  <meta property="og:title" content="LUMIO — Clarity through systems">
+  <meta property="og:description" content="Premium Notion templates for every area of life. Free to duplicate. Built for students, freelancers, and anyone who wants a clearer life.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23000'/><text x='8' y='24' font-family='monospace' font-size='20' fill='%23fff'>L</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,18 +18,6 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    :root {
-      --black: #000000;
-      --white: #ffffff;
-      --surface-dark: #0a0a0a;
-      --border-dark: #1a1a1a;
-      --border-light: #e5e5e5;
-      --text-dark-secondary: #a1a1aa;
-      --text-light-secondary: #525252;
-      --surface-light: #fafafa;
-      --notion-link: https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc;
     }
 
     html {
@@ -61,7 +49,7 @@
       background: rgba(0,0,0,0.85);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border-dark);
+      border-bottom: 1px solid #1a1a1a;
       transform: translateY(0);
       transition: transform 300ms ease;
     }
@@ -92,6 +80,7 @@
       height: 28px;
       object-fit: contain;
       filter: brightness(0) invert(1);
+      display: block;
     }
 
     .nav-wordmark {
@@ -115,7 +104,7 @@
       font-weight: 300;
       font-size: 12px;
       letter-spacing: 0.05em;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       text-decoration: none;
       transition: color 200ms ease;
     }
@@ -198,13 +187,12 @@
     }
 
     .mobile-menu a:hover {
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
     }
 
     .mobile-menu-cta {
       border: 1px solid #fff !important;
-      padding: 14px 32px;
-      font-size: 14px !important;
+      padding: 14px 32px !important;
     }
 
     /* ─── HERO ─── */
@@ -232,7 +220,7 @@
       font-size: 10px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       border: 1px solid #333;
       padding: 6px 14px;
       border-radius: 4px;
@@ -253,7 +241,7 @@
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 17px;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       line-height: 1.7;
       max-width: 480px;
       margin-bottom: 40px;
@@ -313,8 +301,8 @@
     #features-strip {
       background: #000;
       padding: 32px 0;
-      border-top: 1px solid var(--border-dark);
-      border-bottom: 1px solid var(--border-dark);
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
     }
 
     .features-strip-inner {
@@ -333,21 +321,21 @@
       font-weight: 300;
       font-size: 11px;
       letter-spacing: 0.08em;
-      color: var(--text-dark-secondary);
-      border: 1px solid var(--border-dark);
-      background: var(--surface-dark);
+      color: #a1a1aa;
+      border: 1px solid #1a1a1a;
+      background: #0a0a0a;
       padding: 10px 20px;
       border-radius: 4px;
       white-space: nowrap;
     }
 
-    /* ─── FEATURES ─── */
-    #features {
+    /* ─── PRODUCTS ─── */
+    #products {
       background: #fff;
       padding: 120px 32px;
     }
 
-    .features-inner {
+    .products-inner {
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -377,50 +365,156 @@
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: var(--text-light-secondary);
+      color: #525252;
       text-align: center;
       margin-bottom: 64px;
     }
 
-    .features-grid {
+    .products-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1px;
-      background: var(--border-light);
-      border: 1px solid var(--border-light);
+      background: #e5e5e5;
+      border: 1px solid #e5e5e5;
     }
 
-    .feature-card {
-      background: #fff;
-      padding: 36px;
-      transition: background 200ms ease;
+    /* ─── PRODUCT CARDS ─── */
+    .product-card {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .feature-card:hover {
-      background: var(--surface-light);
-    }
-
-    .feature-icon {
-      font-size: 28px;
-      margin-bottom: 16px;
+    .product-badge {
+      font-family: 'Geist Mono', monospace;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
       display: block;
     }
 
-    .feature-title {
+    .product-name {
       font-family: 'Geist Mono', monospace;
       font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.05em;
-      color: #000;
-      margin-bottom: 10px;
+      font-size: 22px;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
     }
 
-    .feature-desc {
+    .product-tagline {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-family: 'Geist', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .product-features {
+      list-style: none;
+      flex: 1;
+    }
+
+    .product-features li {
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 13px;
-      color: var(--text-light-secondary);
-      line-height: 1.65;
+      line-height: 2;
+    }
+
+    .product-cta {
+      display: block;
+      font-family: 'Geist Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      padding: 14px;
+      border-radius: 0;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 32px;
+      width: 100%;
+      transition: background 200ms ease, color 200ms ease;
+    }
+
+    /* Scholar — black card */
+    .card-scholar {
+      background: #000;
+    }
+
+    .card-scholar .product-badge {
+      color: #a1a1aa;
+    }
+
+    .card-scholar .product-name {
+      color: #fff;
+    }
+
+    .card-scholar .product-tagline {
+      color: #a1a1aa;
+    }
+
+    .card-scholar .product-desc {
+      color: #a1a1aa;
+    }
+
+    .card-scholar .product-features li {
+      color: #fff;
+    }
+
+    .card-scholar .product-cta {
+      background: #fff;
+      color: #000;
+      border: 1px solid #fff;
+    }
+
+    .card-scholar .product-cta:hover {
+      background: #f0f0f0;
+    }
+
+    /* Finance — white card */
+    .card-finance {
+      background: #fff;
+    }
+
+    .card-finance .product-badge {
+      color: #a3a3a3;
+    }
+
+    .card-finance .product-name {
+      color: #000;
+    }
+
+    .card-finance .product-tagline {
+      color: #525252;
+    }
+
+    .card-finance .product-desc {
+      color: #525252;
+    }
+
+    .card-finance .product-features li {
+      color: #000;
+    }
+
+    .card-finance .product-cta {
+      background: #000;
+      color: #fff;
+      border: 1px solid #000;
+    }
+
+    .card-finance .product-cta:hover {
+      background: #1a1a1a;
     }
 
     /* ─── HOW IT WORKS ─── */
@@ -434,10 +528,21 @@
       margin: 0 auto;
     }
 
+    .section-label-dark {
+      font-family: 'Geist Mono', monospace;
+      font-weight: 300;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #a1a1aa;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
     .section-headline-dark {
       font-family: 'Instrument Serif', serif;
       font-style: italic;
-      font-size: clamp(32px, 5vw, 56px);
+      font-size: clamp(32px, 5vw, 52px);
       color: #fff;
       text-align: center;
       line-height: 1.1;
@@ -448,45 +553,24 @@
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       text-align: center;
       margin-bottom: 64px;
     }
 
-    .section-label-dark {
-      font-family: 'Geist Mono', monospace;
-      font-weight: 300;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--text-dark-secondary);
-      text-align: center;
-      margin-bottom: 16px;
-    }
-
     .steps-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border: 1px solid var(--border-dark);
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid #1a1a1a;
     }
 
     .step {
-      padding: 40px 32px;
-      border-right: 1px solid var(--border-dark);
-      position: relative;
+      padding: 40px 36px;
+      border-right: 1px solid #1a1a1a;
     }
 
     .step:last-child {
       border-right: none;
-    }
-
-    .step-symbol {
-      font-family: 'Geist Mono', monospace;
-      font-weight: 300;
-      font-size: 32px;
-      color: var(--text-dark-secondary);
-      margin-bottom: 20px;
-      display: block;
     }
 
     .step-number {
@@ -498,6 +582,15 @@
       margin-bottom: 8px;
       display: block;
       line-height: 1;
+    }
+
+    .step-symbol {
+      font-family: 'Geist Mono', monospace;
+      font-weight: 300;
+      font-size: 28px;
+      color: #a1a1aa;
+      margin-bottom: 20px;
+      display: block;
     }
 
     .step-title {
@@ -513,7 +606,7 @@
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 13px;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       line-height: 1.65;
     }
 
@@ -525,13 +618,14 @@
       color: #555;
       text-align: center;
       margin-top: 48px;
+      display: block;
     }
 
     /* ─── STATS ─── */
     #stats {
       background: #000;
-      border-top: 1px solid var(--border-dark);
-      border-bottom: 1px solid var(--border-dark);
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
     }
 
     .stats-grid {
@@ -543,7 +637,7 @@
 
     .stat {
       padding: 48px 40px;
-      border-right: 1px solid var(--border-dark);
+      border-right: 1px solid #1a1a1a;
       text-align: center;
     }
 
@@ -565,7 +659,7 @@
       font-size: 10px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       margin-top: 8px;
       display: block;
     }
@@ -577,13 +671,18 @@
       text-align: center;
     }
 
+    .cta-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
     .cta-badge {
       font-family: 'Geist Mono', monospace;
       font-weight: 300;
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.15em;
-      color: var(--text-dark-secondary);
+      color: #a1a1aa;
       border: 1px solid #333;
       padding: 6px 14px;
       border-radius: 4px;
@@ -594,7 +693,7 @@
     .cta-headline {
       font-family: 'Instrument Serif', serif;
       font-style: italic;
-      font-size: clamp(36px, 5vw, 64px);
+      font-size: clamp(36px, 5vw, 72px);
       color: #fff;
       line-height: 1.1;
       margin-bottom: 20px;
@@ -604,23 +703,29 @@
       font-family: 'Geist', sans-serif;
       font-weight: 400;
       font-size: 16px;
-      color: var(--text-dark-secondary);
-      margin-bottom: 40px;
-      max-width: 560px;
-      margin-left: auto;
-      margin-right: auto;
+      color: #a1a1aa;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
     .cta-btn-primary {
       display: inline-block;
       font-family: 'Geist Mono', monospace;
       font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.08em;
+      font-size: 13px;
+      letter-spacing: 0.05em;
       background: #fff;
       color: #000;
       border: 1px solid #fff;
-      padding: 18px 48px;
+      padding: 16px 36px;
       border-radius: 0;
       cursor: pointer;
       text-decoration: none;
@@ -631,21 +736,41 @@
       background: #f0f0f0;
     }
 
-    .cta-notes {
-      display: block;
+    .cta-btn-secondary {
+      display: inline-block;
+      font-family: 'Geist Mono', monospace;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 16px 36px;
+      border-radius: 0;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 200ms ease, color 200ms ease;
+    }
+
+    .cta-btn-secondary:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .cta-note {
       font-family: 'Geist Mono', monospace;
       font-weight: 300;
       font-size: 10px;
       letter-spacing: 0.08em;
       color: #555;
-      margin-top: 20px;
-      line-height: 1.9;
+      margin-top: 24px;
+      display: block;
     }
 
     /* ─── FOOTER ─── */
     footer {
       background: #000;
-      border-top: 1px solid var(--border-dark);
+      border-top: 1px solid #1a1a1a;
       padding: 48px 32px;
     }
 
@@ -658,7 +783,7 @@
       gap: 40px;
     }
 
-    .footer-left .footer-wordmark {
+    .footer-wordmark {
       font-family: 'Geist Mono', monospace;
       font-weight: 500;
       font-size: 13px;
@@ -698,9 +823,8 @@
 
     .footer-bottom {
       max-width: 1200px;
-      margin: 0 auto;
-      border-top: 1px solid var(--border-dark);
-      margin-top: 40px;
+      margin: 40px auto 0;
+      border-top: 1px solid #1a1a1a;
       padding-top: 24px;
       text-align: center;
     }
@@ -759,15 +883,7 @@
         margin-right: auto;
       }
 
-      .hero-badge {
-        display: inline-block;
-      }
-
-      .hero-note {
-        display: block;
-      }
-
-      .features-grid {
+      .products-grid {
         grid-template-columns: 1fr;
       }
 
@@ -777,7 +893,7 @@
 
       .step {
         border-right: none;
-        border-bottom: 1px solid var(--border-dark);
+        border-bottom: 1px solid #1a1a1a;
       }
 
       .step:last-child {
@@ -793,11 +909,11 @@
       }
 
       .stat:nth-child(3) {
-        border-top: 1px solid var(--border-dark);
+        border-top: 1px solid #1a1a1a;
       }
 
       .stat:nth-child(4) {
-        border-top: 1px solid var(--border-dark);
+        border-top: 1px solid #1a1a1a;
         border-right: none;
       }
 
@@ -824,7 +940,7 @@
         padding: 90px 20px 60px;
       }
 
-      #features {
+      #products {
         padding: 80px 20px;
       }
 
@@ -839,6 +955,17 @@
       footer {
         padding: 40px 20px;
       }
+
+      .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .cta-btn-primary,
+      .cta-btn-secondary {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -849,20 +976,13 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="LUMIO Home">
-        <img src="image.jpeg" alt="LUMIO mascot" width="28" height="28">
+        <img src="my-notion-face-transparent.png" alt="LUMIO" width="28" height="28" style="object-fit:contain; filter:brightness(0) invert(1);">
         <span class="nav-wordmark">LUMIO</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
+        <li><a href="#products">Products</a></li>
         <li><a href="#how-it-works">How it works</a></li>
-        <li>
-          <a
-            href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-cta"
-          >Get Free Template →</a>
-        </li>
+        <li><a href="#products" class="nav-cta">Get Free Templates →</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span>
@@ -873,15 +993,10 @@
   </nav>
 
   <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="#features" id="mobile-features">Features</a>
-    <a href="#how-it-works" id="mobile-how">How it works</a>
-    <a
-      href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="mobile-menu-cta"
-    >Get Free Template →</a>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <a href="#products">Products</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#products" class="mobile-menu-cta">Get Free Templates →</a>
   </div>
 
   <main>
@@ -890,25 +1005,21 @@
     <section id="hero" class="dot-grid">
       <div class="hero-inner">
         <div class="hero-text">
-          <span class="hero-badge">LUMIO SCHOLAR · FREE NOTION TEMPLATE</span>
-          <h1 class="hero-headline">Your entire semester, organized automatically.</h1>
-          <p class="hero-sub">GPA calculates itself. Assignments flag themselves overdue. Exams count themselves down. You just add your data.</p>
-          <a
-            href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hero-cta"
-          >Get LUMIO Scholar — Free →</a>
-          <span class="hero-note">No credit card · Works on Notion Free plan · Duplicate in one click</span>
+          <span class="hero-badge">LUMIO · FREE NOTION TEMPLATES</span>
+          <h1 class="hero-headline">Systems for a clearer life.</h1>
+          <p class="hero-sub">Free Notion templates for students, freelancers, and anyone who wants clarity in their work, money, and life.</p>
+          <a href="#products" class="hero-cta">Browse Free Templates →</a>
+          <span class="hero-note">Free to duplicate · Works on Notion Free plan · No credit card ever</span>
         </div>
         <div class="hero-image-wrap">
           <img
-            src="image.jpeg"
-            alt="LUMIO Scholar mascot — a stylized character with glasses and wavy hair"
+            src="my-notion-face-transparent.png"
+            alt="LUMIO mascot"
             class="hero-mascot"
             id="hero-mascot"
             width="320"
             height="320"
+            style="object-fit:contain; filter:brightness(0) invert(1);"
           >
         </div>
       </div>
@@ -917,43 +1028,70 @@
     <!-- FEATURES STRIP -->
     <section id="features-strip">
       <div class="features-strip-inner">
-        <span class="feature-pill">⚡ Auto GPA</span>
-        <span class="feature-pill">📝 Overdue Alerts</span>
+        <span class="feature-pill">📚 Student Planner</span>
+        <span class="feature-pill">💰 Budget Tracker</span>
+        <span class="feature-pill">🎯 Savings Goals</span>
+        <span class="feature-pill">📝 Assignment Alerts</span>
         <span class="feature-pill">⏰ Exam Countdown</span>
-        <span class="feature-pill">📖 Study Log</span>
-        <span class="feature-pill">🎯 Goal Tracker</span>
-        <span class="feature-pill">💰 Budget Planner</span>
+        <span class="feature-pill">📉 Debt Tracker</span>
+        <span class="feature-pill">🏦 Net Worth</span>
+        <span class="feature-pill">💳 Subscription Audit</span>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section id="features">
-      <div class="features-inner">
-        <p class="section-label fade-up">LUMIO SCHOLAR</p>
-        <h2 class="section-headline-light fade-up">Your entire semester, organized automatically.</h2>
-        <p class="section-sub-light fade-up">8 databases. All connected. Everything calculates itself.</p>
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="products-inner">
+        <p class="section-label fade-up">FREE TEMPLATES</p>
+        <h2 class="section-headline-light fade-up">One system for every area of life.</h2>
+        <p class="section-sub-light fade-up">Download free. Duplicate in one click. Every formula already built.</p>
 
-        <div class="features-grid">
-          <div class="feature-card fade-up">
-            <span class="feature-icon">📊</span>
-            <h3 class="feature-title">Auto GPA Calculator</h3>
-            <p class="feature-desc">Enter your scores. Weighted GPA calculates automatically — HW 20%, Midterm 30%, Final 35%, Project 15%. Letter grade, GPA points on 4.0 scale, and Dean's List detection. You never touch a formula.</p>
+        <div class="products-grid">
+
+          <!-- LUMIO SCHOLAR -->
+          <div class="product-card card-scholar fade-up">
+            <span class="product-badge">FREE · EDUCATION</span>
+            <h3 class="product-name">LUMIO Scholar</h3>
+            <p class="product-tagline">Your entire semester, organized automatically.</p>
+            <p class="product-desc">GPA calculates itself. Assignments flag themselves overdue. Exams count themselves down. 8 databases, all connected.</p>
+            <ul class="product-features">
+              <li>→ Weighted GPA auto-calculated</li>
+              <li>→ Live exam countdown</li>
+              <li>→ Overdue assignment alerts</li>
+              <li>→ Study log with mood tracking</li>
+              <li>→ Student budget tracker</li>
+              <li>→ Savings goals tracker</li>
+            </ul>
+            <a
+              href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="product-cta"
+            >Get LUMIO Scholar — Free →</a>
           </div>
-          <div class="feature-card fade-up">
-            <span class="feature-icon">📝</span>
-            <h3 class="feature-title">Overdue Alerts</h3>
-            <p class="feature-desc">Every assignment tracked with priority flags 🔴🟡🟢 and a live days-until-due countdown. The overdue flag activates automatically the moment a deadline passes — without you doing anything.</p>
+
+          <!-- LUMIO FINANCE -->
+          <div class="product-card card-finance fade-up">
+            <span class="product-badge">FREE · PERSONAL FINANCE</span>
+            <h3 class="product-name">LUMIO Finance</h3>
+            <p class="product-tagline">Your entire financial life, organized automatically.</p>
+            <p class="product-desc">Income, expenses, savings, debt, and net worth — all connected and calculated automatically. 8 databases for complete financial clarity.</p>
+            <ul class="product-features">
+              <li>→ Income tracker (8 sources)</li>
+              <li>→ Budget with over-spend alerts</li>
+              <li>→ Savings goals with progress %</li>
+              <li>→ Subscription audit + "Worth It" rating</li>
+              <li>→ Debt tracker with payoff progress</li>
+              <li>→ Net worth calculator</li>
+            </ul>
+            <a
+              href="https://spiral-chalk-624.notion.site/LUMIO-Finance-Personal-Finance-Planner-3294a1f8914f81719928d3118de6409c"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="product-cta"
+            >Get LUMIO Finance — Free →</a>
           </div>
-          <div class="feature-card fade-up">
-            <span class="feature-icon">⏰</span>
-            <h3 class="feature-title">Exam Countdown</h3>
-            <p class="feature-desc">Add your exams once. Days remaining count down live every day. Urgency auto-classifies itself: 📅 Upcoming → 🔥 This Week → 🚨 Tomorrow → ✅ Done. No manual updates ever.</p>
-          </div>
-          <div class="feature-card fade-up">
-            <span class="feature-icon">💰</span>
-            <h3 class="feature-title">Student Budget Tracker</h3>
-            <p class="feature-desc">Track spending across 13 categories. The difference between budgeted and actual calculates automatically. Over-budget alerts fire the moment you overspend in any category.</p>
-          </div>
+
         </div>
       </div>
     </section>
@@ -961,51 +1099,45 @@
     <!-- HOW IT WORKS -->
     <section id="how-it-works" class="dot-grid">
       <div class="how-inner">
-        <p class="section-label-dark fade-up">GET STARTED</p>
-        <h2 class="section-headline-dark fade-up">From zero to organized in 10 minutes.</h2>
-        <p class="section-sub-dark fade-up">Four steps. Then it runs itself forever.</p>
+        <p class="section-label-dark fade-up">HOW IT WORKS</p>
+        <h2 class="section-headline-dark fade-up">From zero to organized in minutes.</h2>
+        <p class="section-sub-dark fade-up">Three steps. Then it runs itself forever.</p>
 
         <div class="steps-grid fade-up">
           <div class="step">
             <span class="step-number">01</span>
             <span class="step-symbol">→</span>
-            <h3 class="step-title">Click the button</h3>
-            <p class="step-desc">Hit Get Free Template below. The LUMIO Scholar workspace opens instantly in your browser. No account needed to preview.</p>
+            <h3 class="step-title">Click the template</h3>
+            <p class="step-desc">Choose LUMIO Scholar or LUMIO Finance. Click the link. The workspace opens instantly in your browser.</p>
           </div>
           <div class="step">
             <span class="step-number">02</span>
             <span class="step-symbol">⧉</span>
-            <h3 class="step-title">Click Duplicate</h3>
-            <p class="step-desc">You'll see a blue Duplicate button in the top right corner. Click it. Sign into your free Notion account. The entire workspace copies in seconds.</p>
+            <h3 class="step-title">Duplicate it free</h3>
+            <p class="step-desc">Click Duplicate in the top right corner. Sign into your free Notion account. The entire system copies to your workspace in seconds.</p>
           </div>
           <div class="step">
             <span class="step-number">03</span>
-            <span class="step-symbol">⚙</span>
-            <h3 class="step-title">Fill in Settings</h3>
-            <p class="step-desc">Open the Settings page. Add your name, university, semester start and end dates, and target GPA. Takes 2 minutes.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">04</span>
-            <span class="step-symbol">📚</span>
-            <h3 class="step-title">Add your subjects</h3>
-            <p class="step-desc">Open Subjects and add your courses. Everything else — assignments, grades, exams — connects here automatically.</p>
+            <span class="step-symbol">⚡</span>
+            <h3 class="step-title">Watch it run itself</h3>
+            <p class="step-desc">Fill in your data once. GPA calculates. Deadlines count down. Budgets track. Net worth updates. Everything automatic.</p>
           </div>
         </div>
 
-        <p class="steps-note">Requires a free Notion account · Works on Notion Free plan · No credit card ever</p>
+        <span class="steps-note">Free forever · Works on Notion Free plan · No credit card ever</span>
       </div>
     </section>
 
-    <!-- STATS STRIP -->
+    <!-- STATS -->
     <section id="stats">
       <div class="stats-grid">
         <div class="stat fade-up">
-          <span class="stat-value">8</span>
-          <span class="stat-label">Connected Databases</span>
+          <span class="stat-value">2</span>
+          <span class="stat-label">Free Templates</span>
         </div>
         <div class="stat fade-up">
-          <span class="stat-value">100%</span>
-          <span class="stat-label">Auto-Calculated</span>
+          <span class="stat-value">16</span>
+          <span class="stat-label">Connected Databases</span>
         </div>
         <div class="stat fade-up">
           <span class="stat-value">Free</span>
@@ -1020,20 +1152,25 @@
 
     <!-- FINAL CTA -->
     <section id="final-cta" class="dot-grid">
-      <div>
-        <span class="cta-badge fade-up">FREE NOTION TEMPLATE</span>
-        <h2 class="cta-headline fade-up">Your most organized semester starts here.</h2>
-        <p class="cta-sub fade-up">Works on Notion Free plan. Duplicate in one click. Every formula already built. Start in under 10 minutes.</p>
-        <a
-          href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="cta-btn-primary fade-up"
-        >Get LUMIO Scholar — Free →</a>
-        <span class="cta-notes fade-up">
-          No credit card · Works on Notion Free plan · Duplicate in one click<br>
-          @bylumio on X — Follow for updates
-        </span>
+      <div class="cta-inner">
+        <span class="cta-badge fade-up">FREE NOTION TEMPLATES</span>
+        <h2 class="cta-headline fade-up">Clarity through systems.</h2>
+        <p class="cta-sub fade-up">Two free Notion templates. Built for students and anyone who wants a clearer financial life.</p>
+        <div class="cta-buttons fade-up">
+          <a
+            href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn-primary"
+          >Get LUMIO Scholar →</a>
+          <a
+            href="https://spiral-chalk-624.notion.site/LUMIO-Finance-Personal-Finance-Planner-3294a1f8914f81719928d3118de6409c"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn-secondary"
+          >Get LUMIO Finance →</a>
+        </div>
+        <span class="cta-note fade-up">@bylumio on X — Follow for new templates</span>
       </div>
     </section>
 
@@ -1044,16 +1181,13 @@
     <div class="footer-inner">
       <div class="footer-left">
         <span class="footer-wordmark">LUMIO</span>
-        <p>LUMIO Scholar · Free Notion Student Planner</p>
+        <p>Free Notion templates for every area of life.</p>
         <p>Clarity through systems.</p>
       </div>
       <div class="footer-links">
         <a href="https://x.com/bylumio" target="_blank" rel="noopener noreferrer">X: @bylumio</a>
-        <a
-          href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Get Free Template →</a>
+        <a href="https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc" target="_blank" rel="noopener noreferrer">LUMIO Scholar →</a>
+        <a href="https://spiral-chalk-624.notion.site/LUMIO-Finance-Personal-Finance-Planner-3294a1f8914f81719928d3118de6409c" target="_blank" rel="noopener noreferrer">LUMIO Finance →</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1062,14 +1196,10 @@
   </footer>
 
   <script>
-    const NOTION_LINK = 'https://spiral-chalk-624.notion.site/SCHOLAR-Student-Semester-Planner-3264a1f8914f8185a724d04efa9cf3cc';
-
     // ─── HERO MASCOT FADE IN ───
     window.addEventListener('load', () => {
       const mascot = document.getElementById('hero-mascot');
-      if (mascot) {
-        mascot.classList.add('loaded');
-      }
+      if (mascot) mascot.classList.add('loaded');
     });
 
     // ─── NAVBAR HIDE/SHOW ON SCROLL ───
@@ -1096,14 +1226,17 @@
     // ─── HAMBURGER MENU ───
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      document.body.style.overflow = '';
+    }
 
     hamburger.addEventListener('click', () => {
       const isOpen = mobileMenu.classList.contains('open');
       if (isOpen) {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('open');
-        document.body.style.overflow = '';
+        closeMenu();
       } else {
         mobileMenu.classList.add('open');
         hamburger.classList.add('open');
@@ -1111,12 +1244,8 @@
       }
     });
 
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
     });
 
     // ─── SMOOTH SCROLL FOR ANCHOR LINKS ───
@@ -1131,8 +1260,6 @@
     });
 
     // ─── INTERSECTION OBSERVER FADE UP ───
-    const fadeEls = document.querySelectorAll('.fade-up');
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1141,11 +1268,11 @@
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -32px 0px'
     });
 
-    fadeEls.forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
 
 </body>
